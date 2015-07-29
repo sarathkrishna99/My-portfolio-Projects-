@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="weather.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src = "weather.js"></script>
+<script src = "skycons.js"></script>
+</head>
+<body>
+<form>
+	<input type="email" name="sitename">  
+	<input type="submit">
+	</form>
+<select id="select-time">
+  <option value="real">Use Real Time</option>
+  <option value="morning">Morning</option>
+  <option value="day">Day</option>
+  <option value="night">Night</option>
+</select>   
+<div id="notify"><p>Sorry :( Cant get Positiondata from device - using IP based Position tracking</p></div>
+
+<div id="center">  
+  <h1>Good Morning</h1>
+  <h2>Looking out of the window ...</h2>
+  <div id="app">    
+  <div class="header-row doflex fxcenter">
+    <div class="city"></div>
+    <div class="weather"><canvas id="icon_MAIN" width="80" height="80"></canvas></div>  
+    <div class="temp" id="temp_MAIN"></div>
+  </div>
+    <div class="days doflex fxcenter" id="days">            
+    </div>
+
+  </div> 
+</div>
+</body>
+</html>
